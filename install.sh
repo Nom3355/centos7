@@ -7,3 +7,6 @@ if [ ${IAM} != "root" ]; then
     echo "You must be root to use this script"
     exit 1
 fi
+yum -y update
+yum -y install epel-release
+yum -y install mc unzip zip
