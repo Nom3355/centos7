@@ -10,3 +10,4 @@ fi
 yum -y update
 yum -y install epel-release
 yum -y install mc unzip zip
+sed 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux
